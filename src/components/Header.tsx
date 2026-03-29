@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X } from 'lucide-react';
+import flagColombia from '@/assets/flag-colombia.webp';
 
 const Header = () => {
   const { lang, setLang, t } = useLanguage();

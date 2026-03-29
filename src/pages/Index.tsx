@@ -1,16 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import AdvantagesSection from '@/components/AdvantagesSection';
+import StrategicValueSection from '@/components/StrategicValueSection';
+import ComparisonSection from '@/components/ComparisonSection';
+import MasterPlanSection from '@/components/MasterPlanSection';
+import IndustriesSection from '@/components/IndustriesSection';
+import LocationSection from '@/components/LocationSection';
+import InvestmentCTA from '@/components/InvestmentCTA';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <Header />
+        <HeroSection />
+        <AboutSection />
+        <AdvantagesSection />
+        <StrategicValueSection />
+        <ComparisonSection />
+        <MasterPlanSection />
+        <IndustriesSection />
+        <LocationSection />
+        <InvestmentCTA />
+        <ContactForm />
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </LanguageProvider>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;

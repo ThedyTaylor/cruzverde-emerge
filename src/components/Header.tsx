@@ -70,7 +70,7 @@ const Header = () => {
                     : 'text-primary-foreground/70 hover:text-primary-foreground'
                 }`}
               >
-                ES
+                ES
               </button>
               <button
                 onClick={() => setLang('en')}

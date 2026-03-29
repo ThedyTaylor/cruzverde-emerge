@@ -73,7 +73,6 @@ const Header = () => {
                 }`}
               >
                 <img src={flagColombia} alt="ES" className="w-5 h-3.5 object-cover rounded-sm" />
-                ES
               </button>
               <button
                 onClick={() => setLang('en')}

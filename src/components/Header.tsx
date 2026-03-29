@@ -36,17 +36,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-sm">CV</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-primary-foreground font-bold text-sm leading-tight block">
-                Cruz Verde
-              </span>
-              <span className="text-primary-foreground/60 text-[10px] leading-tight block">
-                Zona Franca Industrial
-              </span>
-            </div>
+            <img src={logoZFICV} alt="ZFICV Logo" className="h-10 lg:h-12 w-auto object-contain" />
           </a>
 
           {/* Desktop Nav */}

@@ -65,12 +65,13 @@ const Header = () => {
             <div className="flex items-center bg-primary-foreground/10 rounded-full p-0.5">
               <button
                 onClick={() => setLang('es')}
-                className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
+                className={`px-2 py-1 rounded-full text-xs font-semibold transition-all flex items-center gap-1 ${
                   lang === 'es'
                     ? 'bg-accent text-accent-foreground'
                     : 'text-primary-foreground/70 hover:text-primary-foreground'
                 }`}
               >
+                <img src={flagColombia} alt="ES" className="w-5 h-3.5 object-cover rounded-sm" />
                 ES
               </button>
               <button

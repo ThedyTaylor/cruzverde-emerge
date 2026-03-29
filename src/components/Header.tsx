@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X } from 'lucide-react';
 import flagColombia from '@/assets/flag-colombia.webp';
 import flagUSA from '@/assets/flag-usa.webp';
+import logoZFICV from '@/assets/logo-zficv.jpg';
 
 const Header = () => {
   const { lang, setLang, t } = useLanguage();

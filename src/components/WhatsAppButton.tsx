@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '18091234567'; // Replace with actual number
+  const phoneNumber = '15619004932';
   const message = encodeURIComponent('Hola, me interesa obtener información sobre Zona Franca Industrial Cruz Verde.');
 
   return (

@@ -6,6 +6,8 @@ import AdvantagesSection from '@/components/AdvantagesSection';
 import StrategicValueSection from '@/components/StrategicValueSection';
 import ComparisonSection from '@/components/ComparisonSection';
 import MasterPlanSection from '@/components/MasterPlanSection';
+import GallerySection from '@/components/GallerySection';
+import PermitsSection from '@/components/PermitsSection';
 import IndustriesSection from '@/components/IndustriesSection';
 import LocationSection from '@/components/LocationSection';
 import InvestmentCTA from '@/components/InvestmentCTA';
@@ -24,6 +26,8 @@ const Index = () => {
         <StrategicValueSection />
         <ComparisonSection />
         <MasterPlanSection />
+        <GallerySection />
+        <PermitsSection />
         <IndustriesSection />
         <LocationSection />
         <InvestmentCTA />

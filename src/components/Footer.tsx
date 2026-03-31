@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import logoFooter from '@/assets/logo-zficv-footer.jpg';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -7,14 +8,12 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">CV</span>
-              </div>
+          <div className="flex items-center gap-4">
+            <img src={logoFooter} alt="ZFICV Logo" className="h-20 lg:h-24 w-auto object-contain rounded-lg" />
+            <div>
               <span className="font-bold text-lg">Cruz Verde</span>
+              <p className="text-primary-foreground/60 text-sm">{t('footer.tagline')}</p>
             </div>
-            <p className="text-primary-foreground/60 text-sm">{t('footer.tagline')}</p>
           </div>
 
           <div className="text-center md:text-right">

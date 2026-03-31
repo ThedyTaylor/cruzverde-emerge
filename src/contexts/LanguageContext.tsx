@@ -158,9 +158,41 @@ const translations: Record<string, Record<Language, string>> = {
     es: 'Ubicado en República Dominicana, con conectividad directa a los principales mercados de América del Norte y el Caribe.',
     en: 'Located in the Dominican Republic, with direct connectivity to the major markets of North America and the Caribbean.',
   },
-  'location.ports': { es: 'Cerca de puertos marítimos principales', en: 'Near major seaports' },
-  'location.highways': { es: 'Acceso directo a autopistas nacionales', en: 'Direct access to national highways' },
-  'location.airports': { es: 'Proximidad a aeropuertos internacionales', en: 'Proximity to international airports' },
+  'location.monte_plata': { es: 'Localizado en Monte Plata, República Dominicana', en: 'Located in Monte Plata, Dominican Republic' },
+  'location.carretera': { es: 'Sobre la carretera Juan Pablo II', en: 'On the Juan Pablo II highway' },
+  'location.capital': { es: '40 minutos del Distrito Nacional', en: '40 minutes from the National District' },
+  'location.port': { es: '25 minutos del puerto industrial', en: '25 minutes from the industrial port' },
+  'location.airport': { es: '30 minutos del Aeropuerto Internacional de Santo Domingo', en: '30 minutes from Santo Domingo International Airport' },
+  'location.highways_nearby': { es: 'Cerca de Av. Carretera Mella, Av. Juan Bosch y Autopista Las Américas', en: 'Near Carretera Mella Ave., Juan Bosch Ave. & Las Américas Highway' },
+
+  // Master Plan areas
+  'masterplan.area_industrial': { es: 'Área Industrial', en: 'Industrial Area' },
+  'masterplan.area_realestate': { es: 'Área de Real Estate', en: 'Real Estate Area' },
+  'masterplan.area_common': { es: 'Área Común del Parque', en: 'Park Common Area' },
+  'masterplan.area_distillery': { es: 'Destilería', en: 'Distillery' },
+
+  // Permits
+  'permits.tag': { es: 'Permisos y Aprobaciones', en: 'Permits & Approvals' },
+  'permits.title': { es: 'Proyecto 100% Aprobado', en: '100% Approved Project' },
+  'permits.subtitle': {
+    es: 'Todos los permisos gubernamentales han sido obtenidos para la construcción y operación del parque industrial.',
+    en: 'All government permits have been obtained for the construction and operation of the industrial park.',
+  },
+  'permits.environmental': { es: 'Permiso Ambiental', en: 'Environmental Permit' },
+  'permits.land_use': { es: 'No objeción de uso de suelo', en: 'Land Use No-Objection' },
+  'permits.construction': { es: 'Licencia de construcción municipal', en: 'Municipal Construction License' },
+  'permits.ftz_park': { es: 'Permiso Parque Zona Franca', en: 'Free Zone Park Permit' },
+  'permits.cnzfe': { es: 'Aprobación del Consejo Nacional de Zonas Francas', en: 'National Free Zone Council Approval' },
+  'permits.mici': { es: 'Resolución aprobada por el MICI', en: 'Resolution approved by MICI' },
+  'permits.decree': { es: 'Decreto Oficial Presidencial en proceso', en: 'Official Presidential Decree in process' },
+
+  // Gallery
+  'gallery.tag': { es: 'Galería del Proyecto', en: 'Project Gallery' },
+  'gallery.title': { es: 'Visualiza el Futuro de Cruz Verde', en: 'Visualize the Future of Cruz Verde' },
+  'gallery.entrance': { es: 'Acceso Principal', en: 'Main Entrance' },
+  'gallery.warehouses': { es: 'Naves Industriales', en: 'Industrial Warehouses' },
+  'gallery.office': { es: 'Edificio Principal - Oficina', en: 'Main Building - Office' },
+  'gallery.distillery': { es: 'Destilería y Almacenamiento', en: 'Distillery & Storage' },
 
   // Investment CTA
   'invest.title': {

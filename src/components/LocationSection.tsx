@@ -1,15 +1,18 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Ship, Route, Plane } from 'lucide-react';
+import { MapPin, Clock, Ship, Plane, Route } from 'lucide-react';
 
 const LocationSection = () => {
   const { t } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
 
-  const connectivity = [
-    { icon: Ship, key: 'location.ports' },
-    { icon: Route, key: 'location.highways' },
-    { icon: Plane, key: 'location.airports' },
+  const details = [
+    { icon: MapPin, key: 'location.monte_plata' },
+    { icon: Route, key: 'location.carretera' },
+    { icon: Clock, key: 'location.capital' },
+    { icon: Ship, key: 'location.port' },
+    { icon: Plane, key: 'location.airport' },
+    { icon: Route, key: 'location.highways_nearby' },
   ];
 
   return (
@@ -45,14 +48,14 @@ const LocationSection = () => {
             />
           </div>
 
-          {/* Connectivity */}
-          <div className="flex flex-col gap-6 justify-center">
-            {connectivity.map(({ icon: Icon, key }) => (
-              <div key={key} className="bg-card rounded-xl p-6 border border-border shadow-sm">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3">
-                  <Icon className="text-accent" size={24} />
+          {/* Connectivity details */}
+          <div className="flex flex-col gap-4 justify-center">
+            {details.map(({ icon: Icon, key }) => (
+              <div key={key} className="bg-card rounded-xl p-5 border border-border shadow-sm flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                  <Icon className="text-accent" size={20} />
                 </div>
-                <p className="text-foreground font-medium text-sm">{t(key)}</p>
+                <p className="text-foreground font-medium text-sm leading-relaxed">{t(key)}</p>
               </div>
             ))}
           </div>

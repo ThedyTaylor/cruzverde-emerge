@@ -81,6 +81,21 @@ const MasterPlanSection = () => {
           </div>
         </div>
 
+        {/* Area Data */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+          {[
+            { key: 'masterplan.area_industrial', value: '68,793 m²' },
+            { key: 'masterplan.area_realestate', value: '54,743 m²' },
+            { key: 'masterplan.area_common', value: '1,200 m²' },
+            { key: 'masterplan.area_distillery', value: '2,100 m²' },
+          ].map((item) => (
+            <div key={item.key} className="bg-card rounded-xl p-6 border border-border shadow-sm text-center">
+              <div className="text-2xl lg:text-3xl font-bold text-accent mb-1">{item.value}</div>
+              <p className="text-muted-foreground text-sm">{t(item.key)}</p>
+            </div>
+          ))}
+        </div>
+
         {/* Infrastructure */}
         <div className="bg-card rounded-xl p-8 border border-border">
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">{t('masterplan.infrastructure')}</h3>
